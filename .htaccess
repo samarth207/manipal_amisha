@@ -1,0 +1,9 @@
+# Serve real files/folders (including /api/*.php) directly.
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Everything else falls back to index.html for React Router (client-side routes).
+RewriteRule ^ index.html [L]
