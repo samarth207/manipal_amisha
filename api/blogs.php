@@ -1,6 +1,7 @@
 <?php
 header('Content-Type: application/json; charset=UTF-8');
 
+define('LEADS_API', true);
 require __DIR__ . '/config.php';
 
 try {
