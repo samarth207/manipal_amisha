@@ -1,0 +1,8 @@
+Options -Indexes
+
+# Never execute scripts from the uploads folder — uploaded files are user
+# content and must be treated as static assets only.
+<FilesMatch "\.(php|phtml|php\d|pl|py|cgi|sh)$">
+  Require all denied
+</FilesMatch>
+php_flag engine off
