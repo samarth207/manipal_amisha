@@ -1,0 +1,12 @@
+# Robots.txt for Manipal Online University
+# This is a static fallback - dynamic robots.txt is served by the server
+User-agent: *
+Allow: /
+
+# Disallow API and private endpoints
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://onlinemanipal.com/sitemap.xml
